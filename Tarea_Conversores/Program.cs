@@ -27,7 +27,7 @@ namespace Tarea_Conversores
           new String[]{"Litro", "Galon USA", "Cuarto USA", "Pinta USA", "Taza USA", "Onza liquida USA", "Cucharada USA", "Cucharadita USA", "Metro Cubico", "Mililitro"}, //Volumen
           new String[]{"Metro", "Kilometro", "Centimetro", "Milimetro", "Micrometro", "Nanometro", "Milla", "Yarda", "Pie", "Pulgada"}, //Longitud
           new String[]{"Megabyte", "Gigabyte", "Terabyte", "Petabyte", "Kilobyte", "Byte", "Petabyte", "Terabyte", "Gigabyte", "Megabyte"}, //Almacenamiento
-          new String[]{"Minutos", "Segundos", "Horas", "Dia", "Semana", "mes", "Año", "Decada", "Siglo", "Milisegundo"}, //Tiempo
+          new String[]{"Minutos", "Segundos", "Hora", "Dia", "Semana", "mes", "Año", "Decada", "Siglo", "Milisegundo"}, //Tiempo
 
             };
 
@@ -43,7 +43,7 @@ namespace Tarea_Conversores
             while (true)
             {
                 Console.Clear();
-                Console.WriteLine("Seleccione lo que quiere convertir");
+                Console.WriteLine("Seleccione la unidad a convertir");
                 for (int i = 0; i < categorias.Length; i++)
                 {
                     Console.WriteLine($"{i}: {categorias[i]}");
@@ -53,7 +53,7 @@ namespace Tarea_Conversores
 
                 while (true)
                 {
-                    Console.Write("\nIngrese el número correspondiente al tipo de conversor: ");
+                    Console.Write("\nIngrese el número de la conversion a realizar: ");
                     if (int.TryParse(Console.ReadLine(), out tipoConversor) && tipoConversor >= 0 && tipoConversor < TipoDeConversores.Length)
                     {
                         break;
@@ -68,7 +68,7 @@ namespace Tarea_Conversores
                 Console.Clear();
                 Console.WriteLine($"\nSeleccionaste la categoría: {categorias[tipoConversor]}");
                 Console.WriteLine();
-                Console.WriteLine("Seleccione la unidad de origen:");
+                Console.WriteLine("Seleccione la primera unidad:");
                 for (int i = 0; i < TipoDeConversores[tipoConversor].Length; i++)
                 {
                     Console.WriteLine($"{i}: {TipoDeConversores[tipoConversor][i]}");
@@ -77,7 +77,7 @@ namespace Tarea_Conversores
                 int unidadOrigen;
                 while (true)
                 {
-                    Console.Write("\nIngrese el número correspondiente a la unidad de origen: ");
+                    Console.Write("\nIngrese el número de la unidad a convertir: ");
                     if (int.TryParse(Console.ReadLine(), out unidadOrigen) && unidadOrigen >= 0 && unidadOrigen < TipoDeConversores[tipoConversor].Length)
                     {
                         break;
@@ -88,7 +88,7 @@ namespace Tarea_Conversores
                     }
                 }
 
-                Console.WriteLine("\nSeleccione la unidad de destino:");
+                Console.WriteLine("\nSeleccione la segunda unidad:");
                 for (int i = 0; i < TipoDeConversores[tipoConversor].Length; i++)
                 {
                     Console.WriteLine($"{i}: {TipoDeConversores[tipoConversor][i]}");
@@ -97,7 +97,7 @@ namespace Tarea_Conversores
                 int unidadDestino;
                 while (true)
                 {
-                    Console.Write("\nIngrese el número correspondiente a la unidad de destino: ");
+                    Console.Write("\nIngrese el número de la unidad a convertir: ");
                     if (int.TryParse(Console.ReadLine(), out unidadDestino) && unidadDestino >= 0 && unidadDestino < TipoDeConversores[tipoConversor].Length)
                     {
                         break;
@@ -129,7 +129,7 @@ namespace Tarea_Conversores
                 string continuar = Console.ReadLine().ToLower();
                 if (continuar != "s")
                 {
-                    Console.WriteLine("\nGracias por usar el conversor de unidades. ¡Hasta luego!");
+                    Console.WriteLine("\n");
                     break;
                 }
 
