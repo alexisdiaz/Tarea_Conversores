@@ -23,21 +23,21 @@ namespace Tarea_Conversores
             String[][] TipoDeConversores = new String[][]{
 
           new String[]{"Dolar", "Euro", "Quetzal", "Lempira", "Cordoba", "ColonSV", "ColonCR", "Yenes", "Rupias india", "Libras esterlinas"}, //Monedas
-          new String[]{"Libra", "Kilogramos", "Gramos", "Toneladas", "Miligramos", "Microgramos", "Tonelada Larga", "Tonelada Corta", "Piedras", "Onza"}, //Masa
-          new String[]{"Litro", "Galon USA", "Cuarto USA", "Pinta USA", "Taza USA", "Onza liquida USA", "Cucharada USA", "Cucharadita USA", "Metro Cubico", "Mililitro"}, //Volumen
-          new String[]{"Metro", "Kilometro", "Centimetro", "Milimetro", "Micrometro", "Nanometro", "Milla", "Yarda", "Pie", "Pulgada"}, //Longitud
-          new String[]{"Megabyte", "Gigabyte", "Terabyte", "Petabyte", "Kilobyte", "Byte", "Petabyte", "Terabyte", "Gigabyte", "Megabyte"}, //Almacenamiento
-          new String[]{"Minutos", "Segundos", "Hora", "Dia", "Semana", "mes", "Año", "Decada", "Siglo", "Milisegundo"}, //Tiempo
+         new String[] {"Tonelada", "Kilogramo", "Gramo", "Miligramo", "Microgramo", "Tonelada larga", "Tonelada corta", "Stone", "Libra", "Onza"}, //Masa
+          new string[] {"Metro Cubico", "Galón", "Cuarto", "Taza americana", "Onza Liquida", "Litro", "Mililitro", "Pulgada Cubica", "Pie Cubico"}, //Volumen
+          new string[] {"Kilometro", "Metro", "Centimetro", "Milímetro", "Micrometro", "Nanometro", "Milla", "Yarda", "Pie", "Pulgada"} , //Longitud
+          new string [] {"Bits", "Bytes", "Kilobytes", "Megabytes", "Gigabytes", "Terabytes", "Petabytes", "Exabytes", "Zettabytes", "Yottabytes"}, //Almacenamiento
+           new string [] {"Nanosegundo", "Microsegundo", "Milisegundo", "Segundo", "Minuto", "Hora", "Dia", "Semana", "Mes", "Año" }, //Tiempo 
 
             };
 
             double[][] valores = {
                 new double[] { 1, 0.90, 7.71, 24.68, 36.66, 8.71, 516.18, 145.31, 83.80, 0.77 }, //Valor Monedas
-                new double[] { 1, 0.453592, 453.592, 0.000453592, 453592, 453600000, 0.000446429, 0.0005, 0.0714286, 16 }, //Valor Masa
-                new double[] { 1, 0.264172, 1.05669, 2.11338, 4.16667, 33.814, 67.628, 202.884, 0.001, 1000 }, //Valor Volumen
-                new double[] { 1, 0.001, 100, 1000, 1000000, 1000000000, 0.000621371, 1.09361, 3.28084, 39.3701 }, //Valor Longitud
-                new double[] { 1, 0.001, 0.000001, 0.000000001, 1000, 1000000, 0.000000001, 0.000001, 0.008, 8 }, //Valor Almacenamiento
-                new double[] { 1, 60, 0.0166667, 0.000694444, 0.000099206, 0.000022831, 0.0000019026, 0.00000019026, 0.00000001903, 60000 }, //Valor Tiempo
+                new double [] {1, 1000, 1000000, 1000000000.00, 00, 0.984207,  1.10231, 157.473, 2204.62, 35274},//Masa
+            new double [] {1, 264.172, 1056.69, 4166.67, 33814, 1000, 1000000, 61023.7, 35.3147}, //Volumen
+            new double [] {1, 1000, 100000, 1000000, 0, 0, 0.621371, 1093.61, 3280.84, 39370.1},//Longitud
+            new double [] {1, 0.125, 0.000125, 0.000000125, 0.00000000009313226, 0.000000000000000000091, 0.000000000000000000000000000888, 0.000000000000000000000000000000000868, 0.0000000000000000000000000000000000000000000848, 0.0000000000000000000000000000000000000000000000000000000000083}, //Almacenamiento
+            new double [] {1, 0.001, 0.000001, 0.000000001, 0.00000000001666667, 0.00000000000027778, 0.00000000000001157407, 0.00000000000000165344, 0.00000000000000038056, 0.0000000000000000317098 } //tiempo
             };
 
             while (true)
